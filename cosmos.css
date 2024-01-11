@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: rgb(255, 255, 255);    
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+
+}
+#cursor-blur{
+    height: 500px;
+    width: 500px;
+    background-color: #ffffff26;
+    border-radius: 50%;
+    position: fixed;
+    filter:blur(40px);
+    z-index: 99;
+
+}
+#nav{
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 0 150px;
+    position: fixed;
+    z-index: 99;
+    animation: fadeIn 3s;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+
+#nav h4{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+#nav h4:hover{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: red;
+}
+#main {
+    position: relative;
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    #fpage{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        display: table;
+        z-index: 8;
+        animation: fadeIn 3s;
+    }
+    
+    #fpage h1{
+        
+        font-size: 90px;
+        font-weight: 900;
+        position: relative;
+        text-align: left;
+        padding-left: 100px;
+        line-height: 120pt;
+    }
+    #fpage h2{
+        padding-top: 170px;
+        font-size :30px;
+        text-align: left;
+        padding-left: 100px;
+        color: rgb(255, 242, 94);
+    }
+    
+    #fpage h3::before{
+        content: "COSMOS";
+        position: absolute;
+        text-transform: monospace;
+        color: #000;
+        bottom: -10px;
+        -webkit-text-stroke: 1px rgb(211, 195, 195);
+        
+    }
+    #fpage p{
+        font-size: 20px;
+        font-weight: 900;
+        font-family:'Courier New', Courier, monospace;
+        width: 90%;
+        text-transform: uppercase;
+        line-height: 24pt;
+        position: relative;
+       text-align: left;
+       padding-left: 100px;
+    }
+    
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+   
+
+    video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+    #fpage2{
+        height: 120vh;
+        width: 100%;
+        display: flex;
+        background-color: #000;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: red;
+    }
+    #fpage2 h1{
+    font-size: 60px;
+    font-weight: 100;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 150px;
+    line-height: 100pt;
+    position: relative;
+    }
+    #fpage2 p{
+        font-size: 20px;
+        font-family: monospace;
+        text-transform: uppercase;
+        text-align: left;
+        width: 50%;
+        padding-left: 150px;
+        line-height: 28pt;
+        position: relative;
+    }
+    
+    #finpage1{
+        height: 110vh;
+        width: 100%;
+           
+    }
+    #finpage1 h1{
+        font-size: 60px;
+        font-weight: 100;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: left;
+        padding-top: 100px;
+        padding-left: 150px;
+        line-height: 100pt;
+        position: relative;
+        }
+    #finpage1 p{
+        font-size: 20px;
+        font-family: monospace;
+        text-transform: uppercase;
+        text-align: left;
+        width: 80%;
+        padding-left: 150px;
+        line-height: 28pt;
+        position: relative;
+    }
+    #finpage2{
+        align-items: center;
+        display: flex;
+        padding-top: 80px;
+       padding-right: 100px;
+    }
+    #finpage2 img{
+        height: 70%;
+        width: 100%;
+        border-radius: 70px;
+    }
+    #h1bet h1{
+        font-size: 70px;
+        font-weight: 100;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        padding-top: 100px;
+    }
+     
+    
+    #fpage3{
+        height: 90vh;
+        width: 100%;
+        background-color: #000;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        position: relative;
+        z-index: 10;
+    }
+
+    #fpage3 h1{
+        font-size: 70px;
+        font-weight: 100;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        padding-top: 100px;
+    }
+    #fpage31{
+        height: 70vh;
+        width: 35%;
+        border: 2px solid;
+        display: grid;;
+        text-align: center;
+        justify-content: center;
+        border-radius: 30px;
+        z-index: 10;
+        position: relative;
+        box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.091);
+        transition: 1s;
+    }
+
+   
+    
+    #fpage31 h2{
+        font-size: 50px;
+        font-family: monospace;
+        text-transform: uppercase;
+    }
+    #fpage31 p{
+        font-size: 23px;
+        font-family: monospace;
+        text-transform: uppercase;
+        
+    }
+    #fpage32{
+        height: 70vh;
+        width: 35%;
+        border: 2px solid;
+        border-radius: 30px;
+        display: grid;;
+        text-align: center;
+        justify-content: center;
+        box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.091);
+    }
+    #fpage32 h2{
+        font-size: 50px;
+        font-family: monospace;
+        text-transform: uppercase;
+    }
+    #fpage32 p{
+        font-size: 23px;
+        font-family: monospace;
+        text-transform: uppercase;
+        
+    }
